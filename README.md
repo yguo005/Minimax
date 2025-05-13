@@ -56,15 +56,7 @@ This assignment involves writing a solver for the game of Tic Tac Toe using the 
     ```
     *Note: The document's pseudocode snippet seems to directly assign `node.value = score` for terminal nodes and uses `node.value` as an accumulator. The more common return pattern is shown above, where the function returns the score directly.*
 
-## General Questions & Reflections
 
-*   **Time Taken:** 1 day
-*   **Collaboration:**
-    *   Discussed the assignment with others (code not shared).
-    *   Specifically discussed the `solve_my_move` method and the interpretation of `alpha`. The assignment requirements stated: "alpha should be updated to be the smallest best_move value found so far (using the cumulative sum pattern)." The discussion questioned this, suggesting `alpha` (in the context of the maximizing player) should be `max(alpha, best_move.value)`, as alpha typically represents the minimum score the maximizing player is assured of.
-        *   *Standard Alpha-Beta: For the maximizing player, `alpha` is the best (highest) value found so far along the current path. For the minimizing player, `beta` is the best (lowest) value.*
-*   **Resources Used:**
-    *   Course slides
 *   **Most Difficult Part:**
     *   Understanding the role and update mechanism of `alpha`. The student felt `alpha` should be `max(alpha, node.value)` for the maximizing player during its turn, not the "smallest best_move value."
 *   **Most Rewarding Part:**
